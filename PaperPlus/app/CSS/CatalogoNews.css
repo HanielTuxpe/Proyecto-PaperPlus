@@ -1,0 +1,244 @@
+.produc{
+    background-color: #923;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contenedor 
+{
+    float:left;
+    margin-left: 5%;
+}
+
+
+.contenedor .Produ img
+{
+    width: 210px;
+    height: 201px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    cursor: pointer;
+    transform: all 1s ease 0s;    
+}
+
+.contenedor .Produ:hover
+{
+    transition-duration: 0.1s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.contenedor
+{
+    margin-top: 70px;
+    height: auto;
+}
+.contenedor
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor .Produ
+{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    background-color: #2D4263;
+    border-radius: 30px;
+}
+
+.contenedor .info
+{
+    background-color: #2D4263;
+    border-radius: 30px;   
+}
+
+
+.contenedor .info
+{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;   
+}
+
+.contenedor .info p:first-child
+{
+    font-size: 19px;
+    font-weight: 300;
+    color: white;
+}
+
+.contenedor .info .Precio
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.contenedor .info .Precio span
+{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.contenedor .info input[type="button"]{
+    background-color: #263143;
+    color: gold;
+    width: 80px;
+    height: 35px;
+    border-radius:10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+
+.contenedor .info input[type="button"]:hover{
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+.dd{
+    position: relative; 
+    display: inline-block;
+}
+
+.dd-btn
+{
+    padding: 15px;
+    text-align: center;
+    background: #173459;
+    border: none;
+    margin: auto;
+    margin-left: 35px;
+    color: #f8f9f9;
+    border-radius: 30px;
+}
+
+.dd-content
+{
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 9px;
+    width: 195px;
+    box-shadow: 0 18px 36px rgba(0,0,0, 0.30),0 14px 11px  rgba(0,0,0, 0.22);
+    height: 0px;
+    transition: height 0.1s;
+    overflow: hidden;
+    
+}
+
+.dd-content p
+{
+    color:#f8f9f9;
+    padding: 5px;
+    font-size: 15px;
+    text-align: start;
+}
+
+.dd-content input[type="button"]{
+    background-color: #263143;
+    margin-top: 4px;
+    color: gold;
+    width: 80px;
+    height: 35px;
+    border-radius:10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+.dd-content input[type="button"]:hover{
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+.dd:hover > .dd-content
+{
+    height: 150px;
+    text-align: center;
+}
+
+.dd-content > a
+{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/*BARRA DE BUSQUEDA*/
+
+
+.Filtrar
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+@media screen and (max-width:1200px)
+{
+    .Filtrar
+    {
+        height: auto;
+    } 
+}
+
+.fil select 
+{
+    float: left;
+    width: 230px;
+    height: 25px;
+    border: none;
+    padding: 1px;
+    outline: none;
+    border-radius:3px 0 0 3px ;
+    border: 1px solid #2D4263 ;
+    font-size: 20px;
+}
+
+.fil option
+{
+    border: none;
+    font-size: 20px;
+}
+
+.fil button
+{
+    background-color: #2D4263;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius:  0 3px 3px 0px;
+    color: aliceblue;
+}
+
+
+.buscar
+{
+    float: left;
+    color: white;
+    font-size: 25px;
+}
+
+.B-btn
+{
+    float: left;
+}

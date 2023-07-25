@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+}
+
+body
+{
+    background-color: #fff56d;
+}
+
+.content-Registro
+{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.content-Registro h4
+{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content-Registro .control{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    color: white;
+}
+
+/*
+.content-Registro p
+{
+    text-align: center; 
+    font-size: 18px;
+}
+
+.content-Registro a
+{
+    color: white;
+    text-decoration: none;
+}
+*/
+
+.content-Registro .Registro{
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 12px;
+    color:black;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 50px;
+    transform: all 0.3s ease 0s;
+
+}
+
+.content-Registro input[type="submit"]:hover
+{
+    background: white;
+    color: gold;
+    transform:scale(1.1);
+}
