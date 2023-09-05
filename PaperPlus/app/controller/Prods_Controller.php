@@ -49,21 +49,24 @@
                     $tipoArchivo=$_FILES['imgProd']['type'];
                     $whimg=$_FILES['imgProd']['size'];
                     $rutaTemp=$_FILES['imgProd']['tmp_name'];
-                    $extenciones=array('jpeg','jpg','png','webp');
+                    $extenciones=array('jpeg','png','webp');
                     $extencion=pathinfo($Nameimg,PATHINFO_EXTENSION);
                     if(!in_array($extencion,$extenciones)){
-                        echo "la imagen no tiene un formato aceptado en el servidor";
+                        echo "<script>alert('La imagen no tiene un formato aceptado en el servidor');</script>";
+                        echo "<script>window.location.href = '/PaperPlus/?C=Prods_Controller&M=index';</script>";
                         exit;
                     }                
-                    $maxwh=3*1024*1024;
+                    $maxwh=1*1024*1024;
                     if($whimg>$maxwh){
-                        echo "ya mejor sube una pelicula o una lona NMms";
+                        echo "<script>alert('La imagen pesa más de lo normal');</script>";
+                        echo "<script>window.location.href = '/PaperPlus/?C=Prods_Controller&M=index';</script>";
                         exit;
                     }
                     $Nameimg=uniqid('imgProd_').'.'.$extencion;
                     $ruta="app/SRC/prodimg/".$Nameimg;
                     if(!move_uploaded_file($rutaTemp,$ruta)){
-                        echo "Error al cargar la imagen a la ruta destino";
+                        echo "<script>alert('Error al cargar la ruta de destino, probablemente no exista');</script>";
+                        echo "<script>window.location.href = '/PaperPlus/?C=Prods_Controller&M=index';</script>";
                         exit;
                     }
                     $img = $Nameimg;
