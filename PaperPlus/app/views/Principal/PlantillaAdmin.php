@@ -51,7 +51,7 @@
 
                 <div class="row">
                     <img src="app/img/whatssapp.png">
-                    <label>Whasap</label>
+                    <label>WhatsApp</label>
                 </div>
                 <div class="row">
                     <img src="app/img/png-transparent-circle-facebook-fb-round-icon-social-media-social-network-popular-services-brands-vol-icon-removebg-preview (1).png">
@@ -66,7 +66,7 @@
                 <h1>UBICACIÓN</h1>
                 <div class="add">
                     <img src="app/img/25694.png">
-                    <label>Direcion,colinia,calle</label>
+                    <label>Colonia El Llano <br> CP. 43020 San Felipe Orizatlán, Hgo</label>
                 </div>
             </div>
     </div>
