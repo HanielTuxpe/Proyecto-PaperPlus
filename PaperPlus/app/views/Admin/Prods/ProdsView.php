@@ -22,7 +22,7 @@
                     <option value="<?php echo $rowsc->IdMarca; ?>"><?php echo $rowsc->Nombre; ?></option>
                 <?php } ?>
             </select>
-            <input class="control" type="file" name="imgProd" id="img" accept="image/*">
+            <input class="control" type="file" name="imgProd" id="img" accept="image/jpeg, image/jpg, image/png">
             <input class="RegistroUser" type="submit" value="Registrarse">
         </form>
     </div>
